@@ -1,0 +1,17 @@
+{
+  "name": "boilerplate-parcel",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "Yasmine Budak",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  },
+  "browserlist": "> 0.5%, last 2 versions, not dead"
+}
