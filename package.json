@@ -1,17 +1,15 @@
 {
-  "name": "boilerplate-parcel",
+  "name": "moment3",
   "version": "1.0.0",
-  "description": "",
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
-  "keywords": [],
   "author": "Yasmine Budak",
   "license": "ISC",
-  "devDependencies": {
-    "parcel": "^2.13.3"
+  "dependencies": {
+    "parcel": "^2.14.0"
   },
-  "browserlist": "> 0.5%, last 2 versions, not dead"
+  "browserlist": "> 0.5%, last 2 versions, not dead",
 }
