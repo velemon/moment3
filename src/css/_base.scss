@@ -4,13 +4,15 @@ $font-stack: Monospace, Courier New;
 $secondary-font: Roboto, Sans-serif;
 $primary-color: #000000;
 $secondary-color: #ffffff;
-$background-color: rgba(0, 0, 0, 0.043);
+$background-color-light: rgba(139, 64, 64, 0.043);
+$background-color-dark: rgba(255, 255, 255, 0.091);
 $menu-color: #4e0d0d;
 $hover-color: lighten($menu-color, 50%);
 $click-color: darken($menu-color, 14%);
 $source-color: #696969;
 $primary-fontsize: 1em;
 $secondary-fontsize: 1.5em;
+$theme: light;
 
 
 @mixin menu-a() {

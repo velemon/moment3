@@ -2,6 +2,40 @@
 @use "base";
 @use "component";
 
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --main-bg: rgba(139, 64, 64, 0.043);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: black;
+        --text-color: white;
+        --main-bg: rgba(255, 255, 255, 0.091);
+    }
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+
+    @if base.$theme == dark {
+        background-color: black;
+        color: white;
+        main {
+            background-color: base.$background-color-dark;
+        }
+
+    } else {
+        background-color: white;
+        color: black;
+        main {
+            background-color: base.$background-color-light;
+        }
+    }
+}
+
 #intro {
     @include base.intro-border;
 }
@@ -64,12 +98,12 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: base.$background-color;
+    background-color: base.$background-color-light;
     padding: 2em;
     margin: 0 auto;
     border-radius: 4em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
+    background: var(--main-bg);
     p {
         font-family: base.$secondary-font;
         line-height: 1.5em;
@@ -94,3 +128,4 @@ footer {
 footer p {
     margin: 2em;
 }
+
