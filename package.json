@@ -4,14 +4,18 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "start": "parcel --open chrome",
     "build": "parcel build"
   },
   "author": "Yasmine Budak",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.14.0",
-    "parcel": "^2.14.0"
+    "parcel": "^2.14.0",
+    "sharp": "^0.33.5"
   },
-  "browserlist": "> 0.5%, last 2 versions, not dead"
+  "browserlist": "> 0.5%, last 2 versions, not dead",
+  "dependencies": {
+    "sass": "^1.86.0"
+  }
 }

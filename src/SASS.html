@@ -1,31 +1,47 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SASS</title>
-    <link rel="stylesheet" href="css/main.scss"/>
+    <link rel="stylesheet" href="css/main.scss" />
     <script src="js/scripts.js"></script>
 </head>
+
 <body>
-    <header>
+    <header class="header-container">
         <nav class="nav-menu">
             <ul>
                 <li><a href="index.html">SPEL</a></li>
-                <li><a href="SASS.html">SASS</a></li>
+                <li class="current"><a href="SASS.html">SASS</a></li>
                 <li><a href="#">Menyval 3</a></li>
                 <li><a href="#">Menyval 4</a></li>
             </ul>
         </nav>
-        <h1>SASS</h1>
+        <h1 id="sass-header">SASS</h1>
     </header>
     <main>
-        <h2>Utvärdering</h2>
-        <h3>Vilka för- och nackdelar ser du med SASS?</h3>
-        <p></p>
-        <h3>Hur var det att komma igång att arbete med en CSS-preprocessor?</h3>
-        <p></p>
+        <section class="main-section">
+            <h2>Utvärdering</h2>
+            <h3>Vilka för- och nackdelar ser du med SASS?</h3>
+            <p></p>
+            <h3>Hur var det att komma igång att arbete med en CSS-preprocessor?</h3>
+            <p>Det var lite klurigt att komma igång då jag det var helt nytt för mig och jag hade problem
+                med att Parcel kraschade varje gång det blev något fel i SASS-koden. Det innebar att 
+                jag fick starta om terminalen och starta om Parcel ofta. Detta gjorde att det tog lite längre
+                tid att komma igång. Å andra sidan fick jag verkligen se vad som blev fel varje gång. Det 
+                kunde även ta lite tid att hoppa bland alla olika filer och partials i början när man inte visste
+                vad som skulle vara vart. 
+                Bortsett från det så gick det smidigare när man förstått strukturen och syntaxen lite mer. Dock
+                finns det mycket mer att lära sig!
+            </p>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Moment 3</p>
+        <p>Av: Yasmine Budak</p>
+    </footer>
 </body>
+
 </html>

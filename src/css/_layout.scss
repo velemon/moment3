@@ -1,0 +1,93 @@
+//sidans utseende så som grid, flexbox och containers
+@use "base";
+@use "component";
+
+#intro {
+    @include base.intro-border;
+}
+
+nav,
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: base.$menu-color;
+}
+
+nav {
+
+    a {
+        @include base.menu-a;
+    }
+
+    li {
+        @include base.menu-li;
+        @include base.hover-link;
+        @include base.click-link;
+    }
+}
+
+.current {
+    @include base.current-page;
+}
+
+h2,
+h3 {
+    font-family: base.$font-stack;
+    @include base.title;
+}
+
+
+
+h2 {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+header p {
+    margin-left: 1em;
+    padding: 0.5em;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: base.$font-stack;
+}
+
+#sass-header {
+     margin-bottom: 3em;
+}
+
+main {
+    max-width: 110ch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: base.$background-color;
+    padding: 2em;
+    margin: 0 auto;
+    border-radius: 4em;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+main p,
+header p,
+main li {
+    font-family: base.$secondary-font;
+}
+
+.source {
+    color: base.$source-color;
+    margin-bottom: 1em;
+}
+
+footer {
+    @include base.footer;
+}
+
+footer p {
+    margin: 2em;
+}
