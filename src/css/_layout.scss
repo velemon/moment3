@@ -20,16 +20,20 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 
-    @if base.$theme == dark {
+    @if base.$theme ==dark {
         background-color: black;
         color: white;
+
         main {
             background-color: base.$background-color-dark;
         }
 
-    } else {
+    }
+
+    else {
         background-color: white;
         color: black;
+
         main {
             background-color: base.$background-color-light;
         }
@@ -59,6 +63,10 @@ nav {
         @include base.menu-li;
         @include base.hover-link;
         @include base.click-link;
+    }
+
+    ul {
+        list-style: none;
     }
 }
 
@@ -90,7 +98,7 @@ header p {
 }
 
 #sass-header {
-     margin-bottom: 3em;
+    margin-bottom: 3em;
 }
 
 main {
@@ -104,6 +112,7 @@ main {
     border-radius: 4em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background: var(--main-bg);
+
     p {
         font-family: base.$secondary-font;
         line-height: 1.5em;
@@ -129,3 +138,25 @@ footer p {
     margin: 2em;
 }
 
+@media screen and (max-width: 499px) {
+    nav {
+        height: fit-content;
+        padding-top: 5%;
+
+        li {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .current {
+            background-color: base.$click-color;
+            border-radius: 1em;
+        }
+    }
+}
