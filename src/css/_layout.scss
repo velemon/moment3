@@ -32,15 +32,13 @@ nav {
     @include base.current-page;
 }
 
-h2,
-h3 {
+.third-title {
     font-family: base.$font-stack;
     @include base.title;
 }
 
-
-
 h2 {
+    @extend .third-title;
     margin-bottom: 2em;
     text-align: center;
 }
@@ -71,12 +69,17 @@ main {
     margin: 0 auto;
     border-radius: 4em;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    p {
+        font-family: base.$secondary-font;
+        line-height: 1.5em;
+    }
 }
 
-main p,
 header p,
 main li {
     font-family: base.$secondary-font;
+    line-height: 1.5em;
 }
 
 .source {
